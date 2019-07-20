@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
       redirect '/error'
     end
   end
-  
+ =begin  
   get '/error' do 
     erb :error 
   end 
