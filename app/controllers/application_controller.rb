@@ -19,11 +19,6 @@ class ApplicationController < Sinatra::Base
       erb :error 
     end
   end
-=begin  
-  get '/error' do 
-    erb :error 
-  end
-=end 
  
 
   get '/account' do
