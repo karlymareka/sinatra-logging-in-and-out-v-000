@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     end
   end
   
-  get '/error'
+  get '/error' do 
     erb :error 
   end 
 
