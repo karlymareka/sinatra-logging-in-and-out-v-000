@@ -23,6 +23,9 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
     @id = session[:user_id]
+    if @id == nil 
+      erb :error 
+    else 
     @user = User.find_by(id: @id)
     erb :account 
   end
