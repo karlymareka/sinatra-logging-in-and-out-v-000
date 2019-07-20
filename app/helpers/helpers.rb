@@ -8,6 +8,8 @@ class Helpers
   def self.is_logged_in?(user)
     if user[:user_id]
       true 
+    else 
+      false 
     end 
   end
   
