@@ -26,8 +26,9 @@ class ApplicationController < Sinatra::Base
     if @id == nil 
       erb :error 
     else 
-    @user = User.find_by(id: @id)
-    erb :account 
+      @user = User.find_by(id: @id)
+      erb :account
+    end 
   end
 
   get '/logout' do
