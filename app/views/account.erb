@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">  
   </head>
   <body id="page-top">
-    <% if Helpers.is_logged_in? %>
+    <% if Helpers.is_logged_in?(@user) %>
           Username: <%=@user.username%>
           Account Balance: <%=@user.balance%>
     <% else 
