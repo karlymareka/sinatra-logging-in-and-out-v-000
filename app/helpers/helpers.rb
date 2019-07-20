@@ -1,5 +1,5 @@
 require 'pry'
-class Helpers
+class Helpers < ActiveRecord::Base
   
   def self.current_user(user)
     @user = User.find_by(id: user[:user_id])
