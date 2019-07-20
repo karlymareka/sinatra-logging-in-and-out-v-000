@@ -6,6 +6,7 @@ class Helpers
   end 
 
   def self.is_logged_in?(user)
+    binding.pry 
     if user[:user_id]
       true 
     else 
